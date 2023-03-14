@@ -1,12 +1,27 @@
 import { AgencySelection, Hero } from "../sections";
 
-
 const heroProps = {
   image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
   title: "Agency procurement, outsourced.",
   description: "Start the process here",
   ctaText: "Start",
 };
+
+const agencySelectionProps = {
+  title: "Managed agency selection",
+  description: "Strengthen your onboarding process",
+  image: { src: "/img/video.png", width: 320, height: 500 },
+  briefCardIcon: { src: "/img/brief.jpg", alt: "Brief Icon", width: 100, height: 100},
+  briefCardHeading: "Brief",
+  briefCardText: "Complete brief writing or simple guidance on what to include, we've got you covered.",
+  searchCardIcon: { src: "/img/search.png", alt: "Search Icon", width: 100, height: 100 },
+  searchCardHeading: "Search",
+  searchCardText: "In-depth agency search covering; criteria matching, door knocking and due-diligence vetting.",
+  pitchCardIcon: { src: "/img/pitch.png", alt: "Pitch IconS", width: 100, height: 100 },
+  pitchCardHeading: "Pitch",
+  pitchCardText: "Comprehensive pitch management, including comms, diary management and pitch hosting.",
+};
+
 
 export default function Home() {
   return (
@@ -20,8 +35,9 @@ export default function Home() {
         />
       </head>
       <div>
-        {/* <Hero {...heroProps} /> */}
-       < AgencySelection />
+        {/* <Hero {...heroProps} /> */}      
+        {/** Other sections */}
+        <AgencySelection {...agencySelectionProps} />
       </div>
     </>
   );
