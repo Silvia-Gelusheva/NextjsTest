@@ -9,7 +9,7 @@ export const StyledCard = styled(
  flex-direction: row;  
  align-items: center; 
  margin-top: 1.5rem;
- padding: 0.5rem;
+ padding: 0.90rem;
  text-decoration: none;
  border-radius: 5px;
  border-style: solid;
@@ -51,6 +51,7 @@ export const StyledTextSection = styled(
 )`
   display: flex;
   flex-direction: column;
+ 
   margin-top: ${({ topMargin }) => topMargin}rem;
   margin-bottom: ${({ bottomMargin }) => bottomMargin}rem;
 `;
