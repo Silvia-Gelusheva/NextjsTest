@@ -11,15 +11,15 @@ const agencySelectionProps = {
   title: "Managed agency selection",
   description: "Strengthen your onboarding process",
   image: { src: "/img/video.png", width: 320, height: 500 },
-  briefCardIcon: { src: "/img/brief.jpg", alt: "Brief Icon", width: 100, height: 100},
+  briefCardIcon: { src: "/img/brief.png", alt: "Brief Icon", width: 45, height: 45 },
   briefCardHeading: "Brief",
-  briefCardText: "Complete brief writing or simple guidance on what to include, we've got you covered.",
-  searchCardIcon: { src: "/img/search.png", alt: "Search Icon", width: 100, height: 100 },
+  briefCardText: <p> Complete <strong> brief writing or  simple guidance </strong> on what to   include, we've got you covered.</p>,
+  searchCardIcon: { src: "/img/search.png", alt: "Search Icon", width: 45, height: 45 },
   searchCardHeading: "Search",
-  searchCardText: "In-depth agency search covering; criteria matching, door knocking and due-diligence vetting.",
-  pitchCardIcon: { src: "/img/pitch.png", alt: "Pitch IconS", width: 100, height: 100 },
+  searchCardText: <p>In-depth agency search covering;  <strong>criteria matching; </strong>door knocking  and due-diligence vetting.</p>,
+  pitchCardIcon: { src: "/img/pitch.png", alt: "Pitch IconS", width: 45, height: 45 },
   pitchCardHeading: "Pitch",
-  pitchCardText: "Comprehensive pitch management, including comms, diary management and pitch hosting.",
+  pitchCardText: <p>Comprehensive <strong>pitch management, </strong> including comms, diary management  and pitch hosting.</p>,
 };
 
 
@@ -35,7 +35,7 @@ export default function Home() {
         />
       </head>
       <div>
-        {/* <Hero {...heroProps} /> */}      
+        {/* <Hero {...heroProps} /> */}
         {/** Other sections */}
         <AgencySelection {...agencySelectionProps} />
       </div>

@@ -9,11 +9,11 @@ import Image from "next/image";
 
 // The Card to be exported goes here
 
-export const Card = ({ icon, heading, text, alt, width, height, ...props }) => {
+export const Card = ({ icon, heading, text, alt, ...props }) => {
   return (
     <StyledCard {...props}>
       <StyledImageSection>
-        <Image src={icon} alt={alt} width={width} height={height} />
+        <Image src={icon} alt={alt} width={80} height={80} />
       </StyledImageSection>
       <StyledTextSection>
         <StyledHeading>{heading}</StyledHeading>
